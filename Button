@@ -1,0 +1,9 @@
+  Button(
+                onClick = {  },
+                modifier = Modifier
+                    .fillMaxWidth(0.7f)
+                    .fillMaxHeight(0.17f),
+                colors = ButtonDefaults.buttonColors(containerColor = Color.Blue)
+            ) {
+                Text("Get Started", color = Color.White,fontSize = 20.sp)
+            }
