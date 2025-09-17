@@ -1,0 +1,33 @@
+
+// 1.
+
+
+
+            Text(
+                text = "Already have an account? Login",
+                fontSize = 15.sp,
+                color = Color.Blue,
+                textDecoration = TextDecoration.Underline, // optional, looks like a link
+                modifier = Modifier.clickable {
+                    println("Login clicked")
+                }
+            )
+
+
+
+// 2.    // for showing Login text as a different color
+
+
+  Text(
+                text = buildAnnotatedString {
+                    append("Already have an account? ")
+                    withStyle(style = SpanStyle(color = Color.Red)) {
+                        append("Login")
+                    }
+                },
+                fontSize = 15.sp,
+                color = Color.Blue, // default color for the first part
+                modifier = Modifier.clickable {
+                    println("Login clicked")
+                }
+            )
