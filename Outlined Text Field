@@ -1,0 +1,12 @@
+
+
+import androidx.compose.runtime.*
+
+var name by remember { mutableStateOf("") }  // state to store input
+
+OutlinedTextField(
+                value = name,
+                onValueChange = { name = it },
+                label = { Text("Full Name") },
+                modifier = modifier.fillMaxWidth(0.7f) // takes 70% of parent width
+            )
