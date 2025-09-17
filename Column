@@ -1,0 +1,8 @@
+
+
+ Column (modifier=modifier.fillMaxSize()
+            .background(color= Color.LightGray),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center,){
+}
+
