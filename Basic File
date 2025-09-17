@@ -1,0 +1,18 @@
+
+
+
+@Composable
+@Preview  // use only when we not using navigation
+fun SplashScreen(modifier: Modifier = Modifier) {
+    MaterialTheme {
+        Column (modifier=modifier.fillMaxSize()
+            .background(color= Color.LightGray),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center,){
+
+
+              // your content here 
+    
+    }
+  }
+}
