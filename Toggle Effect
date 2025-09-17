@@ -1,0 +1,19 @@
+fun App() {
+    MaterialTheme {
+        var showContent by remember { mutableStateOf(false) }
+        Column(
+            modifier = Modifier
+                .background(color= Color.Blue)
+                .safeContentPadding()
+                .fillMaxSize(),
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ) {
+            Button(onClick = { showContent = !showContent }) {
+                Text("Click me1!")
+            }
+            AnimatedVisibility(showContent) {
+                Text("Hello")
+            }
+        }
+    }
+}
