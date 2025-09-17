@@ -1,0 +1,2 @@
+ Text("Start Smart", color = Color.Blue,fontSize = 40.sp,
+                fontWeight = FontWeight.W800 , textAlign = TextAlign.Center)
